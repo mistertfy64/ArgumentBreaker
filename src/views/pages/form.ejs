@@ -11,7 +11,7 @@
 <body>
   <% for (let item of items) { %>
   <%- include(`../partials/${item.item}.ejs`,{content:item.content}) %>
-  <%- <br> %>
+  <%- `<br>` %>
   <% } %>
 </body>
 
