@@ -1,0 +1,33 @@
+{
+  "name": "argumentbreaker",
+  "version": "0.1.0",
+  "description": "Self-hostable form creator",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "copyStaticFiles": "copyfiles --up 1 \"src/**/*\" -e \"**/*.ts\" dist",
+    "start": "npm run compile && npm run copyStaticFiles && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mistertfy64/ArgumentBreaker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mistertfy64/ArgumentBreaker/issues"
+  },
+  "homepage": "https://github.com/mistertfy64/ArgumentBreaker#readme",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.4.0",
+    "mongoose": "^7.1.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17"
+  }
+}
