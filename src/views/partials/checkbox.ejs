@@ -1,0 +1,8 @@
+<div style=<%-`${content.style}`%>>
+  <%-`${content.text}`%>
+  <br>
+  <% for (let option of content.options) {%>
+  <%-`<input type="checkbox" name="${content.name}" id="${option.id}" value="${option.value}">`%>
+  <%-`<label for="${option.id}">${option.label}</label><br>`%>
+  <%}%>
+</div>
