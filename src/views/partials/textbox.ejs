@@ -1,1 +1,3 @@
-<%- include("../partials/text.ejs",{text:content.text})%>
+<div style=<%-`${content.style||""}`%>>
+  <%- include("../partials/text.ejs",{text:content.text})%>
+</div>
