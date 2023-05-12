@@ -1,0 +1,5 @@
+<div <%-include("../partials/style.ejs",{style:content?.style})%>>
+  <%-`${content?.text}`%>
+  <br>
+  <input type="range" name="<%-`${content?.name}`%>" step="<%-`${content?.step}`%>" min="<%-`${content?.min}`%>" max="<%-`${content?.max}`%>" value="<%-`${content?.value}`%>" id="<%-`${content?.id}`%>" <%-include("../partials/style.ejs",{style:content?.innerStyle})%>>
+</div>

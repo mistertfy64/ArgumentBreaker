@@ -34,10 +34,10 @@ app.get(
 			`${id}.json`
 		);
 		let data = JSON.parse(fs.readFileSync(formDataPath, "utf-8"));
-		response.render("pages/form", { items: data.items });
+		response.render("pages/form", { data: data });
 	}
 );
-mongoose.connect(process.env.DATABASE_URI as string);
+// mongoose.connect(process.env.DATABASE_URI as string);
 
 app.listen(process.env.PORT, () => {
 	console.log(`Listening at port ${process.env.PORT}`);
