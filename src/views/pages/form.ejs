@@ -9,10 +9,12 @@
 </head>
 
 <body>
-  <% for (let item of items) { %>
-  <%- include(`../partials/${item.item}.ejs`,{content:item.content}) %>
-  <%- `<br>` %>
-  <% } %>
+  <form method="POST" action=<%-`${data.action}`%>>
+    <% for (let item of data.items) { %>
+    <%- include(`../partials/${item.item}.ejs`,{content:item.content}) %>
+    <%- `<br>` %>
+    <% } %>
+  </form>
 </body>
 
 </html>

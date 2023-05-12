@@ -1,4 +1,4 @@
-<div style=<%-`${content.style}`%>>
+<div <%-include("../partials/style.ejs",{style:content.style})%>>
   <%-`${content.text}`%>
   <br>
   <% for (let option of content.options) {%>
